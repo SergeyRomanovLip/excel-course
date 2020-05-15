@@ -1,0 +1,24 @@
+{
+  "name": "excel-course",
+  "version": "1.0.0",
+  "description": "Pure JavaScript Excel Application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyRomanovLip/excel-course.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Romanov Sergey <sergey.romanov.lip@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyRomanovLip/excel-course/issues"
+  },
+  "homepage": "https://github.com/SergeyRomanovLip/excel-course#readme"
+}
