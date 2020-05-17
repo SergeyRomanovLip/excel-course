@@ -6,7 +6,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
-const isCSS = 'css'
 
 console.log('IS PROD', isProd)
 console.log('IS DEV', isDev)
@@ -65,7 +64,7 @@ module.exports = {
       },
     ]),
     new MiniCssExtractPlugin({
-      filename: filename('css'), //here is should be a 'filename('css')' but it doesn't work. Now is a 'bundle.[hash].css' SOLVED - "return" was addet to function 'filename()'
+      filename: filename('css'),
     }),
   ],
   module: {
