@@ -28,3 +28,34 @@ Make a commit:
 
 Upload all:
 'git push -u origin webpack'
+
+Switch branches:
+'git checkout master'
+git checkout -b"nameOfBranch"
+
+Pull all new changes from GitHub:
+'git pull'
+
+
+
+--------------------------------------------------
+Application should contain two sheets
+1. Table sheet
+    1.1. Line menu
+        1.1.1. Input (name of table)
+        1.1.2. Exit form table
+        1.1.3. New table
+    1.2. Toolbar
+        1.2.1. Font styles
+    1.3. FX div with Input
+    1.4. The table     
+2. Main menu
+    2.1. Header with dashboard
+    2.2. 'Create new table' button
+    2.3. List of existing tables
+        2.3.1. Name of table
+        2.3.2. Date of creating        
+
+
+    
+    
