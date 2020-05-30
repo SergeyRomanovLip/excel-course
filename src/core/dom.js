@@ -1,7 +1,9 @@
 class Dom {
   constructor(selector) {
     this.$el =
-      typeof selector === 'string' ? document.querySelector(selector) : selector
+      typeof selector === 'string'
+        ? document.querySelector(selector)
+        : selector
   }
   html(html) {
     if (typeof html === 'string') {
@@ -33,6 +35,26 @@ class Dom {
       this.$el.appendChild(node)
     }
     return this
+  }
+
+  get data() {
+    return this.$el.dataset
+  }
+
+  closest(selector) {
+    return $(this.$el.closest(selector))
+  }
+
+  getCoords() {
+    return this.$el.getBoundingClientRect()
+  }
+  findAll(selector) {
+    return this.$el.querySelectorAll(selector)
+  }
+  css(styles = {}) {
+    Object.keys(styles).forEach(key => {
+      this.$el.style[key] = styles[key]
+    })
   }
 }
 
